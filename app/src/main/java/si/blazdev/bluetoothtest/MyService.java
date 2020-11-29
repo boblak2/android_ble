@@ -31,11 +31,11 @@ public class MyService extends Service {
         Notification notification = new NotificationCompat.Builder(this, App.CHANEL_ID)
                 .setContentTitle("Naslov")
                 .setContentText("Me gusta comer el burek")
-                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setSmallIcon(R.drawable.ic_stat_name)
                 .setContentIntent(pIntent)
                 .build();
 
-        //startForeground(1, notification);
+        startForeground(1, notification);
 
         return START_NOT_STICKY;
     }

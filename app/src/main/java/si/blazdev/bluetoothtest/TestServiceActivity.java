@@ -28,8 +28,8 @@ public class TestServiceActivity extends AppCompatActivity {
 
                 Log.e(TAG, "Start service");
                 Intent intentStart = new Intent(getBaseContext(), MyService.class);
-                startService(intentStart);
-                //ContextCompat.startForegroundService(this, intentStart);
+                //startService(intentStart);
+                ContextCompat.startForegroundService(this, intentStart);
                 break;
 
             case R.id.btnStopService:
